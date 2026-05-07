@@ -1,0 +1,9 @@
+import mysql.connector
+
+def busca_dados():
+    cursor = conexao.cursor()
+    cursor.execute("SELECT * FROM funcionarios")
+    resultado = cursor.fetchall()
+
+    for i in resultado:
+        print(i)
